@@ -1,0 +1,19 @@
+button {
+    @include buttonBasic();
+}
+
+button[disabled] {
+    @include buttonLight( $color_neutral );
+    &:hover {
+        background-color: #fff;
+        color: $color_neutral;
+    }
+}
+
+button[estilo=ligero] {
+    @include buttonLight( $color_primario );
+}
+
+button[estilo=destacado] {
+    @include buttonHighlight();
+}
