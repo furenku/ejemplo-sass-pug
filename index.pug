@@ -3,11 +3,19 @@ html
   head
     meta(charset="utf-8")
     link(rel="stylesheet", href="styles/css/styles.css")
-    
+    link(href="https://fonts.googleapis.com/css?family=Manjari|Roboto&display=swap", rel="stylesheet") 
   body
 
-    h1 Hola mundo!!!
-
     include components/general/main-header/main-header.html
+
+    .main-container
+      
+      include components/general/sidebar-left/sidebar-left.html
+
+      include components/general/main/main.html
+
+
+      include components/general/sidebar-right/sidebar-right.html
+
+    include components/general/main-footer/main-footer.html
     
-    include components/general/main/main.html

@@ -58,3 +58,10 @@
     color: $color_complementario_on;
 
 }
+
+
+@mixin centerXY() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

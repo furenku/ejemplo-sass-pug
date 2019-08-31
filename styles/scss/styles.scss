@@ -2,12 +2,32 @@
 @import './colors';
 @import './mixins';
 @import './tipography';
+@import './layout';
 
 @import './elements/buttons';
 
 
+.sidebar-left,
+.sidebar-right,
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    df
+    jcc
+    aic
+    */
+}
 
 /* Componentes */
 @import '../../components/general/main-header/main-header.scss';
+
+@import '../../components/general/sidebar-left/sidebar-left.scss';
+@import '../../components/general/sidebar-right/sidebar-right.scss';
+
+@import '../../components/general/main-footer/main-footer.scss';
+
+@import '../../components/general/main/main.scss';
 
 

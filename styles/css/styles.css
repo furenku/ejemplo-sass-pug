@@ -57,6 +57,45 @@ table {
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+*, a {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Manjari", sans-serif;
+}
+
+.main-header,
+.main-footer {
+  width: 100vw;
+}
+
+.main-header {
+  height: 4rem;
+}
+
+.main-footer {
+  height: 3rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.main-container > * {
+  min-height: calc( 100vh - ( 4rem + 3rem ));
+}
+
+.main-footer {
+  padding: 1rem;
+  background-color: #aaa;
+}
+
 button {
   border: none;
   padding: 1rem;
@@ -105,57 +144,99 @@ button[estilo=destacado] {
   color: #000;
 }
 
+.sidebar-left,
+.sidebar-right,
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*
+  df
+  jcc
+  aic
+  */
+}
+
 /* Componentes */
-#main-header {
+.main-header {
   display: flex;
   align-items: stretch;
   background-color: #eee;
 }
-#main-header .logo {
+.main-header .logo {
   width: 20%;
   display: flex;
   align-items: center;
 }
-#main-header .logo img {
+.main-header .logo img {
   width: 100%;
 }
-#main-header nav {
+.main-header .main-menu {
   width: 80%;
   display: flex;
 }
-#main-header nav ul {
+.main-header .main-menu ul {
   display: flex;
   justify-content: space-between;
   align-self: center;
   width: 100%;
   height: 100%;
 }
-#main-header nav ul li {
+.main-header .main-menu ul li {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
 }
-#main-header nav ul li, #main-header nav ul li * {
+.main-header .main-menu ul li, .main-header .main-menu ul li * {
   transition: all 0.4s;
 }
-#main-header nav ul li.active {
+.main-header .main-menu ul li.active {
   background-color: #aaa;
   font-weight: bold;
 }
-#main-header nav ul li.active a {
+.main-header .main-menu ul li.active a {
   text-decoration: underline;
 }
-#main-header nav ul li:hover {
+.main-header .main-menu ul li:hover {
   background-color: #000;
 }
-#main-header nav ul li:hover a {
+.main-header .main-menu ul li:hover a {
   color: #fff;
 }
-#main-header nav ul li a {
+.main-header .main-menu ul li a {
   color: black;
   text-decoration: none;
+}
+
+.sidebar-left {
+  background-color: #fa0;
+}
+
+.sidebar-right {
+  background-color: #0af;
+}
+
+main > header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ccc;
+}
+main .content {
+  height: calc( 100vh - ( 4rem + 3rem + 5rem ) );
+  overflow: auto;
+  padding: 2rem;
+}
+main .content p {
+  margin: auto;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 2rem;
+  max-width: 60rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

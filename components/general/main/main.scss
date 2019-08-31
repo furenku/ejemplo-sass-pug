@@ -1,0 +1,26 @@
+main {
+
+    &>header {
+        width: 100%;
+        @include centerXY();
+        padding: 1rem;
+        background-color: $color_neutral;
+    }
+
+    .content {
+
+        height: calc( 100vh - ( #{$height_header} + #{$height_footer} + 5rem ) );
+        overflow: auto;
+        
+        padding: 2rem;
+        
+        p {
+            margin: auto;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-size: 2rem;
+            max-width: 60rem; 
+        }
+    }
+    
+}

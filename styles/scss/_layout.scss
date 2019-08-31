@@ -1,0 +1,30 @@
+$height_header: 4rem;
+$height_footer: 3rem;
+
+.main-header,
+.main-footer {
+    width: 100vw;
+}
+
+.main-header {
+    height: 4rem;
+}
+
+.main-footer {
+    height: 3rem;
+}
+
+.main-container {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    
+    &>* {
+        min-height: calc( 100vh - ( #{$height_header} + #{$height_footer} ));
+    }
+}
+
+.main-footer {
+    padding: 1rem;
+    background-color: $color_neutral_oscuro;
+}

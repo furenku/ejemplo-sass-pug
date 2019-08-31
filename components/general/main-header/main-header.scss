@@ -1,11 +1,11 @@
-#main-header {
+.main-header {
 
     // df
     display: flex;
     // ais
     align-items: stretch;
     
-    background-color: #eee;
+    background-color: $color_neutral_claro;
     
     .logo {
         // w20p
@@ -17,7 +17,7 @@
         }
     }
 
-    nav {
+    .main-menu {
         // w80p
         width: 80%;
         // df
@@ -45,7 +45,7 @@
                 // aic
                 align-items: center;
                 // p2rem
-                padding: 3rem;
+                padding: 2rem;
 
                 &,* {
                     transition: all 0.4s;
@@ -53,7 +53,7 @@
 
                 &.active {
                         // bgc
-                        background-color: #aaa;
+                        background-color: $color_neutral_oscuro;
                     font-weight: bold;
 
                     a {
