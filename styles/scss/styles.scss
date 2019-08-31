@@ -1,11 +1,13 @@
 @import './reset';
-@import './colores';
+@import './colors';
 @import './mixins';
-@import './tipografias';
+@import './tipography';
 
-@import './elementos/botones';
+@import './elements/buttons';
 
 
+
+/* Componentes */
 @import '../../components/general/main-header/main-header.scss';
 
 
